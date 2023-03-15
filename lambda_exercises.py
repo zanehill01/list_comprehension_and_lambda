@@ -80,6 +80,7 @@ str1 = "Hello8world"
 str1 = "HELLO"
 str1 = "hello"
 
+print(filter(lambda x: x.istitle() and len(x) > 8, str1))
 
 ''' 7)
 Write a Python program to sort a list of tuples using Lambda.
