@@ -8,22 +8,20 @@ Odd numbers from the said list:
 [1, 3, 5, 7, 9]
 '''
 
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+even = list(filter(lambda x: (x % 2 == 0), list1))
+odd = list(filter(lambda x: (x % 2 == 1), list1))
 
-
+print(even)
+print(odd)
 
 ''' 2)
 find which days of the week have exactly 6 characters.
 '''
 
-weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-
-
-
-
-
-
-
+weekdays = ['Monday', 'Tuesday', 'Wednesday',
+            'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
 ''' 3)
@@ -40,14 +38,6 @@ After removing the specified words from the said list:
 '''
 
 
-
-
-
-
-
-
-
-
 ''' 4)
  remove all elements from a given list present in another list
 Original lists:
@@ -57,10 +47,6 @@ list2: [2, 4, 6, 8]
 Remove all elements from 'list1' present in 'list2:
 [1, 3, 5, 7, 9, 10]
  '''
-
-
-
-
 
 
 ''' 5)
@@ -79,10 +65,6 @@ Elements of the said list that contain specific substring:
 '''
 
 
-
-
-
-
 ''' 6)
 check whether a given string contains a capital letter, a lower case letter, a number and a minimum length of 8 characters.
 (This is like a password verification function, HINT: Python function 'any' may be useful)
@@ -90,17 +72,7 @@ check whether a given string contains a capital letter, a lower case letter, a n
 
 str1 = "Hello8world"
 str1 = "HELLO"
-str1= "hello"
-
-
-
-
-
-
-
-
-
-
+str1 = "hello"
 
 
 ''' 7)
