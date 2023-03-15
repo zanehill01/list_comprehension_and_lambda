@@ -22,7 +22,7 @@ find which days of the week have exactly 6 characters.
 
 weekdays = ['Monday', 'Tuesday', 'Wednesday',
             'Thursday', 'Friday', 'Saturday', 'Sunday']
-
+print(list(filter(lambda x: len(x) == 6, weekdays)))
 
 ''' 3)
 remove specific words from a given list 
@@ -34,9 +34,9 @@ Remove words:
 
 After removing the specified words from the said list:
 ['red', 'green', 'blue', 'white']
-
 '''
-
+list2 = ['orange', 'red', 'green', 'blue', 'white', 'black']
+print(list(filter(lambda x: (x != 'orange' and x != 'black'), list2)))
 
 ''' 4)
  remove all elements from a given list present in another list
@@ -47,7 +47,10 @@ list2: [2, 4, 6, 8]
 Remove all elements from 'list1' present in 'list2:
 [1, 3, 5, 7, 9, 10]
  '''
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = [2, 4, 6, 8]
 
+print(list(filter(lambda x: x not in list2, list1)))
 
 ''' 5)
 find the elements of a given list of strings that contain specific substring using lambda
@@ -63,6 +66,9 @@ Elements of the said list that contain specific substring:
 []
 
 '''
+list1 = ['red', 'black', 'white', 'green', 'orange']
+print(list(filter(lambda x: 'ack' in x, list1)))
+print(list(filter(lambda x: 'abc' in x, list1)))
 
 
 ''' 6)
