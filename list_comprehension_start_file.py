@@ -131,7 +131,9 @@ print(list)
 # count how many times the word 'the' appears in the text file - 'sometext.txt'
 
 infile = ('sometext.txt', 'r')
-list = []
+reader = infile.read()
+result = [x for x in reader.split() if x == 'the']
+print(len(result))
 
 ## Extract the numbers from the following phrase ##
 
