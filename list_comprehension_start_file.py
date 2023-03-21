@@ -125,18 +125,18 @@ print(vehicles)
 
 # Find all the numbers from 1 to 1000 that have a 4 in them
 
-list = [v for k, v in dict.items() if 4 in vehicles]
-print(list)
+values = [x for x in range (1,1001) if '4' in str(x)]
+print(values)
 
 # count how many times the word 'the' appears in the text file - 'sometext.txt'
 
-infile = ('sometext.txt', 'r')
-reader = infile.read()
+infile = open('sometext.txt', 'r')
+reader = infile.read().lower()
 result = [x for x in reader.split() if x == 'the']
 print(len(result))
 
 ## Extract the numbers from the following phrase ##
 
 phrase = 'In 1984 there were 13 instances of a protest with over 1000 people attending. On average there were 15 reported injuries at each " + "event, with about 3 or 4 that were classifled as serious per event.'
-phrase2 = [x for x in phrase if x.isdigit()]
+phrase2 = [x for x in phrase.split() if x.isdigit()]
 print(phrase2)
