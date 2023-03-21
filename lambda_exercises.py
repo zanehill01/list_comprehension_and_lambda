@@ -77,11 +77,11 @@ check whether a given string contains a capital letter, a lower case letter, a n
 '''
 
 str1 = "Hello8world"
-str1 = "HELLO"
-str1 = "hello"
+#str1 = "HELLO"
+#str1 = "hello"
 
-print((lambda x: x.istitle() and len(x) > 8, str1))
-print((lambda x: x.isdigit() and len(x) > 8, str1))
+password_return = (lambda x: any(i.isupper() for i in x) and any(i.islower() for i in x) and any(i.isdigit() for i in x) and len(x) >= 8)
+print(password_return(str1))
 
 
 ''' 7)
